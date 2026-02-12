@@ -1,0 +1,157 @@
+/* ===========================
+   Estilos generales
+   =========================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* tipografía solicitada */
+  background-color: #f8f4ee;
+  color: #2d2d2d;
+  line-height: 1.5;
+}
+
+/* Encabezado */
+header {
+  background-color: #7a2e2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #5b1f1f;
+}
+
+/* Navegación */
+nav {
+  background-color: #d9b08c;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #7a2e2e;
+}
+
+/* Menú digital */
+.plato {
+  border: 1px solid #e3e3e3;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+.plato img {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formularios */
+form fieldset {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+form legend {
+  font-weight: bold;
+  color: #7a2e2e;
+}
+
+label,
+input,
+select,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #7a2e2e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.precio-simulado {
+  background-color: #fff3cd;
+  border: 1px solid #ffe69c;
+  padding: 10px;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f1dfcf;
+}
+
+tbody tr:hover {
+  background-color: #faf3eb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  margin-top: 20px;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Restaurante</title>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <header id="inicio">
+
+    <h1>Restaurante</h1>
+    <p>Aplicación web estática (HTML + CSS)</p>
+
+  </header>
+
+  <nav>
+
+    <ul>
+      <li><a href="#menu-digital">Menú digital</a></li>
+      <li><a href="#pedido">Realizar pedido</a></li>
+      <li><a href="#reserva">Reservar mesa</a></li>
+      <li><a href="#mas-vendidos">Más vendidos</a></li>
+      <li><a href="#usuarios">Vistas por usuario</a></li>
+    </ul>
+
+  </nav>
+
+  <main>
+ 
+    <!-- 3) Visualizar menú -->
+    <section id="menu-digital">
+
+      <h2>Consulta del menú digital</h2>
+
+      <div class="contenedor-platos">
+
+      <div class="plato">
+        <figure>
+          <img src="../images/imagen1.jpg" alt="Entrada del menú" title="Entrada" width="280" />
+          <figcaption>Bruschetta clásica</figcaption>
+        </figure>
+        <p><strong>Categoría:</strong> Entrada</p>
+        <p><strong>Descripción:</strong> Pan tostado con tomate y albahaca.</p>
+        <p><strong>Precio:</strong> $18.000</p>
+      </div>
+
+      <div class="plato">
+        <figure>
+          <img src="../images/imagen2.jpg" alt="Plato fuerte del menú" title="Plato fuerte" width="280" />
+          <figcaption>Pasta carbonara</figcaption>
+        </figure>
+        <p><strong>Categoría:</strong> Plato fuerte</p>
+        <p><strong>Descripción:</strong> Pasta cremosa con tocineta y queso.</p>
+        <p><strong>Precio:</strong> $36.000</p>
+      </div>
+
+      <div class="plato">
+        <figure>
+          <img src="../images/imagen3.jpg" alt="Postre del menú" title="Postre" width="280" />
+          <figcaption>Cheesecake de frutos rojos</figcaption>
+        </figure>
+        <p><strong>Categoría:</strong> Postre</p>
+        <p><strong>Descripción:</strong> Tarta de queso con salsa de frutos rojos.</p>
+        <p><strong>Precio:</strong> $16.000</p>
+      </div>
+
+      </div>
+
+    </section>
+
+    <!-- 3) Realizar pedido -->
+    <section id="pedido">
+
+      <h2>Realizar pedido</h2>
+
+      <form action="#" method="get">
+
+        <fieldset>
+
+          <legend>Seleccionar platos</legend>
+
+          <label for="plato1">Plato 1:</label>
+          <select id="plato1" name="plato1">
+            <option>Bruschetta clásica</option>
+            <option>Pasta carbonara</option>
+            <option>Cheesecake de frutos rojos</option>
+          </select>
+
+          <label for="cantidad1">Cantidad:</label>
+          <input type="number" id="cantidad1" name="cantidad1" min="1" value="1" />
+
+          <label for="plato2">Plato 2:</label>
+          <select id="plato2" name="plato2">
+            <option>Ninguno</option>
+            <option>Bruschetta clásica</option>
+            <option>Pasta carbonara</option>
+            <option>Cheesecake de frutos rojos</option>
+          </select>
+
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad2" name="cantidad2" min="0" value="0" />
+
+          <p class="precio"><strong>Precio:</strong> $52.000</p>
+
+          <button type="submit">Enviar pedido</button>
+
+        </fieldset>
+
+      </form>
+
+    </section>
+
+    <!-- 3) Realizar reserva -->
+    <section id="reserva">
+
+      <h2>Reservar mesa restaurante</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+
+          <legend>Datos de la reserva</legend>
+
+          <label for="personas">Número de personas:</label>
+          <input type="number" id="personas" name="personas" min="1" />
+
+          <label for="edades">Edades de las personas:</label>
+          <textarea id="edades" name="edades" rows="3" placeholder="Ejemplo: 25, 30, 12"></textarea>
+
+          <p>Tipo de evento:</p>
+          <label><input type="radio" name="evento" value="cumpleanos" /> Cumpleaños</label>
+          <label><input type="radio" name="evento" value="trabajo" /> Evento de trabajo</label>
+          <label><input type="radio" name="evento" value="familiar" /> Evento familiar</label>
+
+          <button type="submit">Solicitar reserva</button>
+
+        </fieldset>
+
+      </form>
+
+    </section>
+
+    <!-- 4) Platos más vendidos del día -->
+    <section id="mas-vendidos">
+
+      <h2>Platos más vendidos del día</h2>
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Plato</th>
+            <th>Categoría</th>
+            <th>Porciones vendidas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pasta carbonara</td>
+            <td>Plato fuerte</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Bruschetta clásica</td>
+            <td>Entrada</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Cheesecake de frutos rojos</td>
+            <td>Postre</td>
+            <td>21</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <!-- 4) Simulación tipos de usuarios -->
+    <section id="usuarios">
+
+      <h2>Tipos de usuarios</h2>
+      <ul>
+        <li><strong>Cliente:</strong> consulta menú y realiza pedido.</li>
+        <li><strong>Mesero:</strong> visualiza pedidos y reservas.</li>
+        <li><strong>Cocina:</strong> visualiza pedidos pendientes.</li>
+        <li><strong>Administrador:</strong> revisa platos más vendidos.</li>
+      </ul>
+      <p><em>No incluye autenticación ni funcionalidades reales.</em></p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
